@@ -3,12 +3,7 @@
 import Section from "@/components/Section";
 import { useEffect, useState } from "react";
 
-interface IClock {
-  className?: string;
-  size?: number;
-}
-
-export default function Clock({ className, size = 300 }: IClock) {
+export default function Clock() {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -27,10 +22,10 @@ export default function Clock({ className, size = 300 }: IClock) {
   return (
     <Section title="Clock">
       <svg
-        width={size}
-        height={size}
+        width={300}
+        height={300}
         viewBox="0 0 200 200"
-        className={`${className} bg-white fixed left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 border-2 rounded-full shadow-lg border-cyan-500`}
+        className={` bg-white fixed left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 border-2 rounded-full shadow-lg border-cyan-500`}
       >
         <circle cx="100" cy="100" r="95" stroke="black" strokeWidth="2" fill="none" />
         {/* Angka jam */}
