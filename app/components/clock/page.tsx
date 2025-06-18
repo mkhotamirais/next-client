@@ -3,13 +3,13 @@
 import Section from "@/components/Section";
 import { useEffect, useState } from "react";
 
-export default function Clock({ className, size = 300 }: { className?: string; size?: number }) {
-  const [time, setTime] = useState(new Date());
-  const [isMounted, setIsMounted] = useState(false);
+interface IClock {
+  className?: string;
+  size?: number;
+}
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+export default function Clock({ className, size = 300 }: IClock) {
+  const [time, setTime] = useState(new Date());
 
   useEffect(() => {
     const interval = setInterval(() => setTime(new Date()), 1000);
@@ -23,8 +23,6 @@ export default function Clock({ className, size = 300 }: { className?: string; s
   const hourAngle = (hours % 12) * 30 + minutes * 0.5;
   const minuteAngle = minutes * 6;
   const secondAngle = seconds * 6;
-
-  if (!isMounted) return null;
 
   return (
     <Section title="Clock">
