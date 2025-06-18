@@ -1,0 +1,31 @@
+{
+    "main_menu": [
+        {"label": "home", "url": "/"},
+        {"label": "components", "url": "/components"},
+        {"label": "motion", "url": "/motion"},
+        {"label": "public api", "url": "/public-api"},
+        {"label": "web design", "url": "/web-design"},
+        {"label": "typescript", "url": "/typescript"}
+    ],
+    "components_menu": [
+        {"label": "codeblock", "url": "/components/codeblock"},
+        {"label": "sticky", "url": "/components/sticky"},
+        {"label": "clock", "url": "/components/clock"},
+        {"label": "stopwatch", "url": "/components/stopwatch"},
+        {"label": "symbol color", "url": "/components/symbol-color"},
+        {"label": "pagination", "url": "/components/pagination"}
+    ],
+    "typescript_menu": [
+        {"label": "ts1", "url": "/typescript/ts1"},
+        {"label": "ts2", "url": "/typescript/ts2"}
+    ],
+    "motion_menu": [
+        {"label": "gesture", "url": "/motion/gesture"},
+        {"label": "scroll", "url": "/motion/scroll"}
+    ],
+    "web_design_menu": [
+        {"label": "landing 1", "url": "/web-design/landing-1"},
+        {"label": "landing 2", "url": "/web-design/landing-2"}
+
+    ]
+}
