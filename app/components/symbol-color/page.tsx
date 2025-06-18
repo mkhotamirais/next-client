@@ -565,7 +565,13 @@ export default function SymbolColor() {
   };
   return (
     <section className="font-poppins w-full h-screen flex flex-col items-center p-3 sm:px-12 md:px-20 lg:px-48 xl:px-72 justify-center">
-      <SearchColor search={search} setSearch={setSearch} />
+      <input
+        value={search}
+        type="search"
+        onChange={(e) => setSearch(e.target.value)}
+        className="border w-full rounded-xl p-2 focus:outline-cyan-500 mb-2"
+        placeholder="Search by name (eng/idn)"
+      />{" "}
       <div className={`${colorData.bgHex} h-[90vh] relative rounded-xl size-full flex flex-col p-1`}>
         <div className="relative h-1/2 rounded-xl bg-gray-500 flex flex-col">
           <div className="h-5/6 flex flex-col overflow-y-scroll rounded p-2 gap-[0.2rem]">
@@ -628,23 +634,5 @@ export default function SymbolColor() {
         </div>
       </div>
     </section>
-  );
-}
-
-export function SearchColor({
-  search,
-  setSearch,
-}: {
-  search: string;
-  setSearch: React.Dispatch<React.SetStateAction<string>>;
-}) {
-  return (
-    <input
-      value={search}
-      type="search"
-      onChange={(e) => setSearch(e.target.value)}
-      className="border w-full rounded-xl p-2 focus:outline-cyan-500 mb-2"
-      placeholder="Search by name (eng/idn)"
-    />
   );
 }
