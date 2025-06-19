@@ -1,6 +1,5 @@
 "use client";
 
-import Section from "@/components/Section";
 import { useEffect, useState } from "react";
 
 export default function Clock() {
@@ -20,7 +19,8 @@ export default function Clock() {
   const secondAngle = seconds * 6;
 
   return (
-    <Section title="Clock">
+    <div>
+      <h2 className="h2">Clock</h2>
       <svg
         width={300}
         height={300}
@@ -87,6 +87,6 @@ export default function Clock() {
           strokeWidth="2"
         />
       </svg>
-    </Section>
+    </div>
   );
 }

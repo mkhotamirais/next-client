@@ -1,29 +1,32 @@
 "use client";
 
-export default function Ts2() {
+export default function Ts3() {
   return (
-    <div>
-      Lainnya2
-      <div>Lesson1: Omit</div>
-      <Les1 type="text" />
-      <div>Les1b</div>
-      <Les1b variant="primary" onClick={() => console.log("hello")} />
-      <div>Les1c</div>
-      <Les1c variant="primary">click me again</Les1c>
-      <div>Les2:extracting a component prop</div>
-      <Les2 prop1="abdul" />
-      <Les2PropExtract prop1="ahmad" />
-      <div>Les3: Polymorphic component</div>
-      <Les3 as="h1" size="lg">
-        heading
-      </Les3>
-      <Les3 as="p" size="lg">
-        paragraph
-      </Les3>
-      <Les3 as="label" htmlFor="berhasil" size="lg" color="secondary">
-        label
-      </Les3>
-    </div>
+    <section>
+      <h2 className="h2">Ts3</h2>
+      <div>
+        Lainnya2
+        <div>Lesson1: Omit</div>
+        <Les1 type="text" />
+        <div>Les1b</div>
+        <Les1b variant="primary" onClick={() => console.log("hello")} />
+        <div>Les1c</div>
+        <Les1c variant="primary">click me again</Les1c>
+        <div>Les2:extracting a component prop</div>
+        <Les2 prop1="abdul" />
+        <Les2PropExtract prop1="ahmad" />
+        <div>Les3: Polymorphic component</div>
+        <Les3 as="h1" size="lg">
+          heading
+        </Les3>
+        <Les3 as="p" size="lg">
+          paragraph
+        </Les3>
+        <Les3 as="label" htmlFor="berhasil" size="lg" color="secondary">
+          label
+        </Les3>
+      </div>
+    </section>
   );
 }
 

@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Component } from "react";
 
-export default function Ts1() {
+export default function Ts2() {
   return (
-    <div className="">
-      <h2 className="text-xl font-bold py-3">Typescript 1</h2>
+    <section>
+      <h2 className="h2">Ts2</h2>
       <div>
         <Les1 style={{ color: "red", border: "1px solid", margin: "3px" }} />
         <Les2 style={{ color: "blue", border: "1px solid", margin: "3px" }} />
@@ -21,7 +21,7 @@ export default function Ts1() {
         <div>Lesson7: template literal and exclude</div>
         <Les7 pos="left-center" />
       </div>
-    </div>
+    </section>
   );
 }
 

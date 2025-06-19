@@ -5,19 +5,22 @@
         {"label": "motion", "url": "/motion"},
         {"label": "public api", "url": "/public-api"},
         {"label": "web design", "url": "/web-design"},
-        {"label": "typescript", "url": "/typescript"}
+        {"label": "others", "url": "/others"}
     ],
     "components_menu": [
         {"label": "codeblock", "url": "/components/codeblock"},
         {"label": "sticky", "url": "/components/sticky"},
-        {"label": "clock", "url": "/components/clock"},
-        {"label": "stopwatch", "url": "/components/stopwatch"},
-        {"label": "symbol color", "url": "/components/symbol-color"},
-        {"label": "pagination", "url": "/components/pagination"}
+        {"label": "pagination", "url": "/components/pagination"},
+        {"label": "multiselect", "url": "/components/multiselect"},
+        {"label": "tiptap", "url": "/components/tiptap"}
     ],
-    "typescript_menu": [
-        {"label": "ts1", "url": "/typescript/ts1"},
-        {"label": "ts2", "url": "/typescript/ts2"}
+    "others_menu": [
+        {"label": "ts1", "url": "/others/ts1"},
+        {"label": "ts2", "url": "/others/ts2"},
+        {"label": "ts3", "url": "/others/ts3"},
+        {"label": "clock", "url": "/others/clock"},
+        {"label": "stopwatch", "url": "/others/stopwatch"},
+        {"label": "symbol color", "url": "/others/symbol-color"}
     ],
     "motion_menu": [
         {"label": "gesture", "url": "/motion/gesture"},

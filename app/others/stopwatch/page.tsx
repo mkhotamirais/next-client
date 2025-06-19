@@ -37,7 +37,8 @@ export default function Stopwatch() {
   const formattedTime = formatTime(time);
 
   return (
-    <section className="w-full flex items-center justify-center">
+    <section className="section">
+      <h2 className="h2">Stopwatch</h2>
       <div className="border flex flex-col gap-3 rounded-xl p-5">
         <div className="text-6xl">{formattedTime}</div>
         <div className="rounded flex gap-1 justify-center">

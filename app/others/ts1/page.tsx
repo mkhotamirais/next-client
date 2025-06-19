@@ -1,7 +1,9 @@
-export default function Typescript() {
+export default function Ts1() {
   return (
-    <pre className="text-xs bg-slate-800 text-white px-1 overflow-y-scroll">
-      {`
+    <section>
+      <h2 className="h2">Ts1</h2>
+      <pre className="text-xs bg-slate-800 text-white px-1 overflow-y-scroll">
+        {`
 syaratnya terinstall nodejs dan typescript
 (npm i -g typescript)
 (node -v; npm -v; npx -v; tsx -v).
@@ -85,6 +87,7 @@ interface IdAge extends Id {age: number}
 (x as number).length // output tidak bisa;
 (5 as string).length // output tidak bisa;
       `}
-    </pre>
+      </pre>
+    </section>
   );
 }
