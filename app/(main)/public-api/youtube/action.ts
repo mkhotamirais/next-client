@@ -8,11 +8,7 @@ const channelId = "UCkXmLjEr95LVtGuIm3l2dPg";
 export const getData = async () => {
   try {
     const res = await axios.get(url, {
-      params: {
-        key: apiKey,
-        id: channelId,
-        part: "snippet",
-      },
+      params: { key: apiKey, id: channelId, part: "snippet" },
     });
     return res.data;
   } catch (error) {
