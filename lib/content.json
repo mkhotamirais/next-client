@@ -26,6 +26,12 @@
         {"label": "gesture", "url": "/motion/gesture"},
         {"label": "scroll", "url": "/motion/scroll"}
     ],
+    "public_api_menu": [
+        {"label": "jsonplaceholder", "url": "/public-api/jsonplaceholder"},
+        {"label": "fakestoreapi", "url": "/public-api/fakestoreapi"},
+        {"label": "dummyjson", "url": "/public-api/dummyjson"},
+        {"label": "youtube", "url": "/public-api/youtube"}
+    ],
     "web_design_menu": [
         {"label": "landing 1", "url": "/web-design/landing-1"},
         {"label": "landing 2", "url": "/web-design/landing-2"}

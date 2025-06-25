@@ -1,0 +1,12 @@
+export const dummyJsonUrl = "https://dummyjson.com";
+export const fakeStoreApiUrl = "https://fakestoreapi.com";
+export const jikanAnimeUrl = "https://api.jikan.moe/v4";
+export const jsonPlaceholderUrl = "https://jsonplaceholder.typicode.com";
+export const mediaStackUrl = "https://api.mediastack.com/v1/news";
+// export const newsApiUrl = "https://newsapi.org/v2";
+export const omdbApiUrl = "https://www.omdbapi.com";
+export const reqresUrl = "https://reqres.in/api";
+export const siskoUrl = "https://sistemtoko.com/public";
+// src={`https://sistemtoko.com/img/user/${query.type}/product/${single?.product_img}`}
+export const tmdbUrl = "https://api.themoviedb.org/3";
+// export const urlImg = "https://sistemtoko.com/img/user/hijja/product/";

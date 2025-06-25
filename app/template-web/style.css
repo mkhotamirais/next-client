@@ -1,8 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -113,27 +111,18 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
 .container {
-  @apply mx-auto max-w-6xl px-3 sm:px-6 lg:px-8 h-full;
+  @apply max-w-6xl mx-auto h-full px-4 sm:px-6 lg:px-8;
 }
 
 .h1 {
-  @apply text-2xl sm:text-3xl lg:text-4xl font-bold capitalize;
+  @apply text-2xl font-semibold leading-tight tracking-tighter sm:text-3xl lg:text-4xl;
 }
 
 .h2 {
-  @apply text-lg sm:text-xl lg:text-2xl font-semibold capitalize;
+  @apply text-xl font-semibold leading-tight tracking-tighter sm:text-2xl lg:text-3xl;
 }
 
 .h3 {
-  @apply text-base lg:text-lg font-medium first-letter:capitalize;
+  @apply text-lg font-semibold leading-tight tracking-tighter sm:text-xl lg:text-2xl;
 }
