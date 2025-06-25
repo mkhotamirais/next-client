@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { dummyJsonUrl as url } from "../../constants";
 
-export default async function DjPostId({ params }: { params: { id: string } }) {
+export default async function DjPostId({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const res = await axios.get(`${url}/posts/${id}`);
   const post = res.data;
