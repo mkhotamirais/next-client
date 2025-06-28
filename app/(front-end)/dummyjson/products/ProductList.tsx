@@ -1,10 +1,10 @@
 "use client";
 
-import { dummyJsonUrl } from "@/lib/config/constants";
-import { IProduct } from "@/lib/dummyjson/types";
 import { useInfiniteScroll } from "@/lib/hooks/useInfiniteScroll";
 import Image from "next/image";
 import React from "react";
+import { IProduct } from "../types";
+import { dummyJsonUrl } from "../constants";
 
 interface IProductList {
   initialData: IProduct[];

@@ -1,6 +1,6 @@
-import { dummyJsonUrl } from "@/lib/config/constants";
 import React from "react";
 import ProductList from "./ProductList";
+import { dummyJsonUrl } from "../constants";
 
 const limit = 24;
 

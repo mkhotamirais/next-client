@@ -3,9 +3,11 @@ import React from "react";
 
 export default function Codeblock() {
   return (
-    <div>
-      <h2 className="h2 mb-3">Codeblock with Copy</h2>
-      <CodeBlockWithCopy code={`npx create-next-app@latest`} />
-    </div>
+    <section className="min-h-screen flex items-center justify-center">
+      <div>
+        <h1 className="h1">Codeblock with Copy</h1>
+        <CodeBlockWithCopy code={`npx create-next-app@latest`} />
+      </div>
+    </section>
   );
 }

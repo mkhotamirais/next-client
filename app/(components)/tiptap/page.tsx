@@ -3,9 +3,11 @@ import Tiptap from "./Tiptap";
 
 export default function TiptapPage() {
   return (
-    <div>
-      <h2 className="h2">Tiptap</h2>
-      <Tiptap />
-    </div>
+    <section className="min-h-screen mx-auto max-w-sm flex items-center justify-center">
+      <div className="w-full">
+        <h1 className="h1">Tiptap</h1>
+        <Tiptap />
+      </div>
+    </section>
   );
 }

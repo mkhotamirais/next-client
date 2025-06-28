@@ -1,3 +1,3 @@
 import axios from "axios";
 
-export const url = axios.create({ baseURL: "https://dummyjson.com" });
+export const dummyJsonUrl = axios.create({ baseURL: "https://dummyjson.com" });

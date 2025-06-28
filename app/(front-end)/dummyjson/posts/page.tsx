@@ -1,9 +1,9 @@
-import { IPost } from "@/lib/dummyjson/types";
-import { url } from "@/lib/dummyjson/utils";
+import { dummyJsonUrl } from "../constants";
+import { IPost } from "../types";
 import PostList from "./PostList";
 
 export default async function PostsPage() {
-  const res = await url.get(`/posts?limit=9&skip=0`);
+  const res = await dummyJsonUrl.get(`/posts?limit=9&skip=0`);
   const initialPosts = res.data.posts as IPost[];
 
   return (

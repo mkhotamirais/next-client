@@ -34,7 +34,6 @@ export default function Tiptap() {
 
   return (
     <div className="mb-4">
-      <h2 className="h2 mb-2">Tiptap</h2>
       <Menubar editor={editor} />
       <EditorContent editor={editor} />
     </div>

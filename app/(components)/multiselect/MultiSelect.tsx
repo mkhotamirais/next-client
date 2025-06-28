@@ -19,7 +19,7 @@ const OPTIONS: Option[] = [
 const MultipleSelectorControlled = () => {
   const [value, setValue] = React.useState<Option[]>([]);
   return (
-    <div className="flex w-full flex-col gap-5 px-10">
+    <div className="flex w-full flex-col gap-5">
       <p className="text-primary">Your selection: {value.map((val) => val.label).join(", ")}</p>
       <MultipleSelector
         value={value}

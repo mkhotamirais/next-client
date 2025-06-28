@@ -2,18 +2,18 @@ import React from "react";
 
 export default function Sticky() {
   return (
-    <div>
-      <h2 className="h2">Sticky</h2>
-      <div className="mb-4 max-w-sm">
-        <h3 className="h3">Sticky Model 1</h3>
+    <div className="max-w-sm mx-auto">
+      <h1 className="h1">Sticky</h1>
+      <div className="mb-4">
+        <h2 className="h2">Sticky Model 1</h2>
         <div className="relative h-64 w-full border overflow-y-scroll">
           <div className="h-10">above header</div>
           <div className="h-10 sticky top-0 bg-blue-500">Header</div>
           <div className="h-100 border">content</div>
         </div>
       </div>
-      <div className="mb-4 max-w-sm">
-        <h3 className="h3">Sticky Model 2</h3>
+      <div className="mb-4">
+        <h2 className="h2">Sticky Model 2</h2>
         <div className="relative h-64 w-full border overflow-y-scroll">
           <div>
             <div className="h-10">above header</div>
@@ -30,8 +30,8 @@ export default function Sticky() {
           </div>
         </div>
       </div>
-      <div className="mb-3 max-w-sm">
-        <h3 className="h3">Sticky Model 3</h3>
+      <div className="mb-3">
+        <h2 className="h2">Sticky Model 3</h2>
         <div className="relative h-64 w-full border overflow-y-scroll">
           <div className="h-10">above header</div>
           <div className="h-10 sticky top-0 bg-blue-500">header</div>
@@ -41,8 +41,8 @@ export default function Sticky() {
           </div>
         </div>
       </div>
-      <div className="mb-3 max-w-sm">
-        <h3 className="h3">Sticky Model 4</h3>
+      <div className="mb-3">
+        <h2 className="h2">Sticky Model 4</h2>
         <div className="relative h-64 w-full border overflow-y-scroll">
           <div className="h-10">above header</div>
           <div className="h-10 sticky top-0 bg-blue-500">header</div>

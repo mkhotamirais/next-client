@@ -2,9 +2,9 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { IPost } from "@/lib/dummyjson/types";
-import { url } from "@/lib/dummyjson/utils";
 import { useInfiniteScroll } from "@/lib/hooks/useInfiniteScroll";
+import { IPost } from "../types";
+import { dummyJsonUrl } from "../constants";
 
 interface PostListProps {
   initialData: IPost[];
@@ -18,7 +18,7 @@ export default function PostList({ initialData }: PostListProps) {
     hasMore,
   } = useInfiniteScroll<IPost>({
     fetchFn: async (skip, limit) => {
-      const res = await url.get(`/posts?limit=${limit}&skip=${skip}`);
+      const res = await dummyJsonUrl.get(`/posts?limit=${limit}&skip=${skip}`);
       return res.data.posts;
     },
     limit: 9,
