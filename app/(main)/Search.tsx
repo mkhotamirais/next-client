@@ -9,6 +9,7 @@ const menu = [
   { label: "Public Api List", url: "/public-api-list", cat: "front-end" },
   { label: "Dummyjson", url: "/dummyjson", cat: "front-end" },
   { label: "Youtube", url: "/youtube", cat: "front-end" },
+  { label: "Scrollmagic", url: "/scrollmagic", cat: "front-end" },
   // components
   { label: "Codeblock", url: "/codeblock", cat: "components" },
   { label: "Sticky", url: "/sticky", cat: "components" },

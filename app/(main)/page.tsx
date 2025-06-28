@@ -7,9 +7,12 @@ export default function Home() {
         <h1 className="h1 mb-2">Hi, I’m Khotami, a Frontend Developer</h1>
         <p>Below are some of the front-end websites and interfaces I’ve built.</p>
 
-        <nav className="flex flex-col items-center">
+        <nav className="flex items-center gap-1">
           <Link href="/dummyjson" className="hover:underline py-2 px-3 border rounded leading-none">
             Dummyjson
+          </Link>
+          <Link href="/scrollmagic" className="hover:underline py-2 px-3 border rounded leading-none">
+            Scrollmagic
           </Link>
         </nav>
 
