@@ -9,10 +9,8 @@ export default async function Products() {
 
   return (
     <div>
-      <div className="container">
-        <h1 className="h1">Products</h1>
-        <ProductList initialData={res.data.products} limit={limit} />
-      </div>
+      <h1 className="h1">Products</h1>
+      <ProductList initialData={res.data.products} limit={limit} />
     </div>
   );
 }

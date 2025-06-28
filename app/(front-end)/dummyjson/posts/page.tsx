@@ -8,10 +8,8 @@ export default async function PostsPage() {
 
   return (
     <section>
-      <div className="container">
-        <h2 className="h2">Posts</h2>
-        <PostList initialData={initialPosts} />
-      </div>
+      <h1 className="h1">Posts</h1>
+      <PostList initialData={initialPosts} />
     </section>
   );
 }
