@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { IProduct } from "../types";
 import { dummyJsonUrl } from "../constants";
+import Link from "next/link";
 
 interface IProductList {
   initialData: IProduct[];
@@ -29,7 +30,7 @@ export default function ProductList({ initialData, limit = 9 }: IProductList) {
     <>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-1 sm:gap-2">
         {products.map((item, i) => (
-          <div key={i} className="rounded shadow">
+          <Link href={`/dummyjson/products/${item.id}`} key={i} className="rounded shadow">
             <div>
               <Image
                 src={item.thumbnail}
@@ -44,7 +45,7 @@ export default function ProductList({ initialData, limit = 9 }: IProductList) {
               <h3>{item.brand}</h3>
               <p>${item.price}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <div ref={loaderRef} className="py-4 text-center">
